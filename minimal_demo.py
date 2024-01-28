@@ -4,6 +4,10 @@ import yaml
 
 with open('config.yaml') as f:
     config = yaml.safe_load(f.read())
+for key in ["max_results", "max_cutoff"]:
+    if key not in config:
+        print("Error: %s missing from config." % key)
+        exit()
 
     
 def query_api(query, max_results, max_cutoff):
