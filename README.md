@@ -20,6 +20,8 @@ Also while the demos use HTTP for simplicitly, all of this works over HTTPS.
 
 This demo allows both looking up text as-is and talking to ChatGPT using similar text as context. This does require access to the ChatGPT API, and one must set environmental variables **OPENAI_ORG_ID** and **OPENAI_API_KEY** according to one's OpenAI account.
 
+In `data`, two example documents are provided - Aaron Swart'z *Guerilla Open Access Manifesto* and the US *Declaration of Independence*. However, you can replace them with whatever documents you like for semantic lookup.
+
 In `config.yaml`, there are three parameters that may be tuned as desired (though the default values should be reasonably good for general purpose use):
   * **temp** - The temperature used for querying ChatGPT.
   * **max_results** - The maximum number of similar paragraphs that may be returned.
